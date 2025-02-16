@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Caluculater</title>
+    <style>
+        div{
+            text-align: center;
+            background-color: aqua;
+            width: 500px;
+            padding: 50px;
+            margin-top: 150px;
+            border: 3px solid black;
+            border-radius: 50px;
+        }
+        body{
+            background-color: rgb(239, 220, 239);
+        }
+        button{
+            padding: 10px;
+            border-radius: 20px;
+            background-color: rgb(170, 121, 216);
+        }
+        input{
+            background-color: rgb(240, 240, 240);
+            border-radius: 10px;
+            padding: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+   <center>
+   <div class="container">
+    <h1>Grade Caluculater</h1>
+    <input placeholder="Enter Your Grade" type="text" id="grade"><br>
+    <h2 id="p"></h2><br>
+    <button onclick="grade()">Calculate</button>
+   </div>
+   </center>
+    <script>
+        function grade(){
+          let mark = document.getElementById("grade").value
+          if(mark>90){
+             document.getElementById("p").textContent= "Grade A"
+             p.style.color="Green"
+          }
+          else if(80<mark){
+            document.getElementById("p").textContent="Grade B"
+             p.style.color="blue"
+          }
+          else if(70<mark){
+            document.getElementById("p").textContent="Grade C"
+             p.style.color="Yellow"
+          }else if(60<mark){
+            document.getElementById("p").textContent="Grade D"
+             p.style.color="brown"
+          }else if(50<mark){
+            document.getElementById("p").textContent="Grade E"
+             p.style.color="black"
+          }
+          else 
+          {
+            document.getElementById("p").textContent="Fail"
+             p.style.color="red"
+          }
+        }
+    </script>
+</body>
+</html>
